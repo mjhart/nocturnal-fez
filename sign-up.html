@@ -1,4 +1,21 @@
 ---
 layout: base.njk
 ---
-<h1>Sign up</h1>
+<div class="page-content">
+  <h2>Sign Up</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name
+        <input type="text" name="name" />
+      </label>
+    </p>
+    <p>
+      <label>Your Email
+        <input type="email" name="email" />
+      </label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+</div>
