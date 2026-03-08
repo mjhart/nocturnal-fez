@@ -5,15 +5,18 @@ layout: base.njk
   <aside class="sidebar">
     <h2>Posts</h2>
     <ul>
-      <li><a href="#post-1">The Midnight Garden</a></li>
+      {%- for post in collections.post -%}
+      <li><a href="#{{ post.page.fileSlug }}">{{ post.data.title }}</a></li>
+      {%- endfor -%}
     </ul>
   </aside>
   <main>
-    <article id="post-1">
-      <h2>The Midnight Garden</h2>
-      <p>There is a peculiar stillness that settles over a garden after dark. The flowers, so vivid and loud in daylight, become ghostly silhouettes swaying in the cool evening air. It is in these quiet hours that the garden reveals its true character — not the curated display we tend by day, but something wilder, something that belongs entirely to the night.</p>
-      <p>If you listen closely, you can hear the rustle of nocturnal creatures beginning their rounds. The hedgehog snuffling through fallen leaves, the owl calling from the old oak, the moths tracing silent spirals around the last of the evening primrose. This is the garden unchained from human intention, and it is magnificent.</p>
+    {%- for post in collections.post -%}
+    <article id="#{{ post.page.fileSlug }}">
+      <h2>{{ post.data.title }}</h2>
+      {{ post.content | safe }}
     </article>
+    {%- endfor -%}
   </main>
 </div>
 
