@@ -24,6 +24,15 @@ header h1 {
   letter-spacing: 0.04em;
 }
 
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: inherit;
+}
+
 nav {
   display: flex;
   gap: 1.5rem;
@@ -90,6 +99,11 @@ article h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   color: #1a1a2e;
+}
+
+article a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 article p {

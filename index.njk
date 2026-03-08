@@ -12,8 +12,8 @@ layout: base.njk
   </aside>
   <main>
     {%- for post in collections.post -%}
-    <article id="#{{ post.page.fileSlug }}">
-      <h2>{{ post.data.title }}</h2>
+    <article id="{{ post.page.fileSlug }}">
+      <h2><a href="#{{ post.page.fileSlug }}">{{ post.data.title }}</a></h2>
       {{ post.content | safe }}
     </article>
     {%- endfor -%}
