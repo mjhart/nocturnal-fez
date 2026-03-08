@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #222;
+  background: #fafaf7;
+  line-height: 1.6;
+}
+
+header {
+  background: #1a1a2e;
+  color: #eee;
+  padding: 2rem 2rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+nav a {
+  color: #c0b8a8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.layout {
+  display: flex;
+  max-width: 960px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  color: #1a1a2e;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+article h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
