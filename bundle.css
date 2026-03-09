@@ -217,6 +217,7 @@ article h2 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--text-primary);
+  margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   line-height: 1.25;
   letter-spacing: 0.01em;
@@ -236,6 +237,11 @@ article p {
   margin-bottom: 1.2rem;
   color: var(--text-muted);
   font-size: 1rem;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
 }
 
 article p:first-of-type::first-letter {
