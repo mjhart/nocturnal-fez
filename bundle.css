@@ -26,8 +26,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--text-primary);
-  background: var(--bg-deep);
+  color: #000000;
+  background: #ffffff;
   line-height: 1.75;
   font-size: 16px;
   min-height: 100vh;
@@ -38,7 +38,7 @@ body {
 /* ===== Header ===== */
 
 header {
-  background: var(--bg-deep);
+  background: #1a0a2b;
   padding: 3rem 2rem 2rem;
   text-align: center;
   position: relative;
@@ -165,7 +165,7 @@ nav a:hover::after {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   margin-bottom: 1.2rem;
-  color: var(--text-dim);
+  color: #000000;
   padding-bottom: 0.6rem;
   border-bottom: 1px solid var(--rule);
 }
@@ -179,7 +179,7 @@ nav a:hover::after {
 }
 
 .sidebar a {
-  color: var(--text-muted);
+  color: #000000;
   text-decoration: none;
   font-family: var(--font-display);
   font-size: 1rem;
@@ -190,7 +190,7 @@ nav a:hover::after {
 }
 
 .sidebar a:hover {
-  color: var(--accent);
+  color: #1a0a2b;
 }
 
 /* ===== Articles ===== */
@@ -216,7 +216,7 @@ article h2 {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #000000;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   line-height: 1.25;
@@ -225,17 +225,21 @@ article h2 {
 
 article a {
   text-decoration: none;
-  color: inherit;
+  color: #000000;
   transition: color 0.3s ease;
 }
 
+article a:hover {
+  color: #1a0a2b;
+}
+
 article h2 a:hover {
-  color: var(--accent);
+  color: #1a0a2b;
 }
 
 article p {
   margin-bottom: 1.2rem;
-  color: var(--text-muted);
+  color: #000000;
   font-size: 1rem;
 }
 
@@ -268,7 +272,7 @@ article p:first-of-type::first-letter {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #000000;
   margin-bottom: 2rem;
   letter-spacing: 0.02em;
 }
@@ -284,7 +288,7 @@ article p:first-of-type::first-letter {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--text-dim);
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
@@ -294,9 +298,9 @@ article p:first-of-type::first-letter {
   padding: 0.7rem 0.85rem;
   font-family: var(--font-body);
   font-size: 1rem;
-  color: var(--text-primary);
-  background: var(--bg-surface);
-  border: 1px solid var(--rule);
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #cccccc;
   border-radius: 2px;
   margin-top: 0.4rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -304,12 +308,12 @@ article p:first-of-type::first-letter {
 
 .page-content input:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(200, 164, 92, 0.15);
+  border-color: #1a0a2b;
+  box-shadow: 0 0 0 2px rgba(26, 10, 43, 0.15);
 }
 
 .page-content input::placeholder {
-  color: var(--text-dim);
+  color: #999999;
 }
 
 .page-content button {
@@ -320,16 +324,16 @@ article p:first-of-type::first-letter {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: #1a0a2b;
+  border: 1px solid #1a0a2b;
   border-radius: 2px;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .page-content button:hover {
-  background: var(--accent);
-  color: var(--bg-deep);
+  background: #1a0a2b;
+  color: #ffffff;
 }
 
 /* ===== Footer ===== */
@@ -343,7 +347,7 @@ footer {
 footer p {
   font-family: var(--font-display);
   font-size: 0.85rem;
-  color: var(--text-dim);
+  color: #000000;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
