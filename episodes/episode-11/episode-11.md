@@ -3,6 +3,7 @@ tags: post
 title: Episode 11
 date: 2026-01-11
 ---
+The Most Worried Lions at the Metropolitan Museum of Art
 
 ![](/episodes/episode-11/basil.jpg)
 ![](/episodes/episode-11/basil-plaque.jpg)
