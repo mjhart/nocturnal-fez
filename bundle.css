@@ -59,26 +59,32 @@ header::after {
 .header-inner {
   max-width: 700px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header-title {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: nowrap;
+  min-width: 0;
 }
 
 .header-title img {
-  height: 10rem;
+  height: clamp(4rem, 15vw, 10rem);
   width: auto;
+  flex-shrink: 0;
 }
 
 header h1 {
   font-family: var(--font-display);
-  font-size: 3.2rem;
+  font-size: clamp(1.2rem, 6.5vw, 3.2rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-top: 3.6rem;
+  white-space: nowrap;
+  min-width: 0;
   color: var(--text-primary);
 }
 
@@ -345,9 +351,6 @@ footer p {
 /* ===== Responsive ===== */
 
 @media (max-width: 680px) {
-  header h1 {
-    font-size: 2.2rem;
-  }
 
   .layout {
     flex-direction: column;
