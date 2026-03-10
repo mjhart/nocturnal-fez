@@ -5,13 +5,13 @@ layout: base.njk
   <aside class="sidebar">
     <h2>Posts</h2>
     <ul>
-      {%- for post in collections.post -%}
+      {%- for post in collections.post | reverse -%}
       <li><a href="#{{ post.page.fileSlug }}">{{ post.data.title }}</a></li>
       {%- endfor -%}
     </ul>
   </aside>
   <main>
-    {%- for post in collections.post -%}
+    {%- for post in collections.post | reverse -%}
     <article id="{{ post.page.fileSlug }}">
       <h2><a href="#{{ post.page.fileSlug }}">{{ post.data.title }}</a></h2>
       {{ post.content | safe }}
